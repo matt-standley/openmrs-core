@@ -23,10 +23,46 @@ public class DoubleRange implements Comparable<DoubleRange> {
 	
 	private Double high;
 	
-	private boolean closedLow = true; //TODO: add setters and getters for these
+	private boolean closedLow = true; 
 	
 	private boolean closedHigh = false;
 	
+    
+    /**
+     * @return Returns closedLow.
+     */
+    public boolean GetClosedLow()
+    {
+        return closedLow;
+    }
+    
+    /**
+     * @return Set closedLow.
+     * @param boolean closeLow
+     */
+    public void SetClosedLow(boolean closedLow)
+    {
+        this.closedLow=closedLow;
+    }
+    
+    /**
+     * @return Returns closedHigh.
+     */
+    public boolean GetClosedHigh()
+    {
+        return closedHigh;
+    }
+    
+    /**
+     * @return Set closedhigh.
+     * @param boolean closedHigh
+     */
+    public void SetClosedHigh(boolean closedHigh)
+    {
+        this.closedHigh=closedHigh;
+    }
+    
+    
 	/**
 	 * @should return null low and high if accessors are not called
 	 */
